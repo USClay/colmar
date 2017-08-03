@@ -1,3 +1,39 @@
-h1  {
-  color: red;
+/* --Universal Styles--*/
+
+html {
+  font-size: 16px;
+}
+
+/*--Header--*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  height: 64px;
+  background-color: white;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.logo img {
+  height: 50%;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  padding-right: 24px;
+}
+
+nav span {
+  padding-left: 1rem;
 }
