@@ -1,15 +1,23 @@
 /* --Universal Styles--*/
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }
 
+
+
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
 }
 
 .button {
@@ -18,7 +26,7 @@ h2 {
   background-color: black;
   color: white;
   border-radius: 1rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -105,7 +113,7 @@ nav span {
   height: auto;
   overflow: hidden;
   align-items: center;
-  margin: 2rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .banner .image-container img {
@@ -115,19 +123,120 @@ nav span {
 
 .CTA-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 30%;
   height: auto;
   margin-left: 1.5rem;
 }
 
 .CTA-container h1 {
-  line-height: 1.2;
-  margin-bottom: 2rem;
+  line-height: 1.1;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .CTA-container h2 {
-  line-height: 1.2;
+  line-height: 1.1;
   margin-bottom: 2rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/*--Second Content Row--*/
+
+#second-row {
+  background-color: white;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+#second-row .image-container {
+  margin: 0;
+}
+
+#second-row .image-container img {
+  margin: 0;
+  padding: 0;
+}
+
+.content-left-container {
+  width: 60%;
+}
+
+#information-main-container {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+#second-row h1 {
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+#second-row p {
+  padding: 0 1.5rem;
+}
+
+#emanuel {
+  margin-top: 1rem;
+}
+
+
+
+.content-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.info-tidbit {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: 1px solid gray;
+  margin: 0px 0px 0px 0px;
+}
+
+.info-tidbit .image-container {
+  display: flex;
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+  margin: 0px;
+  padding: 1rem;
+}
+
+.info-tidbit .image-container img {
+  padding: 0px;
+  margin: 0px;
+}
+
+.tidbit-copy {
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#guest-lecture {
+  background-color: gray;
+}
+
+
+
+
+/*--Media Queries--*/
+
+@media screen and (max-width: 840px) {
+  .CTA-container h1 {
+    font-size: 1.75rem;
+  }
+  .CTA-container h2 {
+    font-size: 1.25rem;
+  }
 }
