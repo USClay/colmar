@@ -172,11 +172,16 @@ nav span {
   padding: 0 1.5rem;
 }
 
-#second-row h1 {
+#row-2-info {
+  width: 85%;
+  height: auto;
+}
+
+#row-2-info h1 {
   padding: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
-#second-row p {
+#row-2-info p {
   padding: 0 1.5rem;
 }
 
@@ -192,6 +197,7 @@ nav span {
   justify-content: center;
   align-items: center;
   width: 40%;
+  height: auto;
 }
 
 .info-tidbit {
@@ -211,6 +217,10 @@ nav span {
   padding: 1rem;
 }
 
+#first-image {
+  padding-top: 0;
+}
+
 .info-tidbit .image-container img {
   padding: 0px;
   margin: 0px;
@@ -223,8 +233,33 @@ nav span {
   justify-content: center;
 }
 
+.tidbit-copy p {
+  padding: 0.5rem 0;
+}
+
+.read-more {
+  color: blue;
+}
+
 #guest-lecture {
   background-color: gray;
+}
+
+/*--Course Grid Section--*/
+
+#start-learning {
+  display: flex;
+  width: 100%;
+  background-color: #f0f0f0;
+  justify-content: center;
+}
+
+#start-learning h1 {
+  text-align: center;
+}
+
+.grid-container {
+  display: flex;
 }
 
 
